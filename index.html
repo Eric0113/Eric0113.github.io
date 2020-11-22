@@ -2,6 +2,16 @@
   <head></head>
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
    <style>
+     <script>
+      $(document).ready function(){
+        $("#conceal").click(function(){
+          $("#picture").addclass("animated  Fadeout");
+        });
+        $(document).ready function(){
+          $("#show").click(function(){
+            $("#picture").addclass("animated  Fadeout");
+        });
+       </script>
      h1 {
        color: blue;
      }
@@ -37,7 +47,8 @@
         ,很喜歡裡面的演員還有精彩的動作場面 
       </li>
     </ul> 
-    <img class="img-responsive thick-red-border" width="120" height="120" src="https://i.imgur.com/tmhI4be.jpg">
-    
+    <img id="picture"class="img-responsive thick-red-border" width="120" height="120" style="display: block; "src="https://i.imgur.com/tmhI4be.jpg">
+    <button id="conceal">隱藏</button>
+    button id="show">顯示</button>
   </body>
 </html>
