@@ -2,16 +2,16 @@
   <head>
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
     <script>
-      $(document).ready function(){
+      $(document).ready(function(){
         $("#hide").click(function(){
           $("#h1").hide();
         });
-        $(document).ready function(){
-          $("#show").click(function(){
-            $("#h1").show();
+        
+        $("#show").click(function(){
+           $("#h1").show();
         });
-        $(document).ready function(){
-          $("#button").click(function(){
+        
+        $("#button").click(function(){
             $("#picture").fadeToggle("slow");
         });
        
@@ -40,7 +40,7 @@
            <button id="show">顯示</button>
         </div>
     <div class="col-xs-6">
-      <h2 class="red-text text-center">My introduction</h2>
+      <h2 class=" text-center">My introduction</h2>
      </div>
     <p> 哈囉 我是張皓崴 目前是資工系二年級 興趣是玩遊戲、看電影 
     <p></p>
@@ -56,7 +56,10 @@
         ,很喜歡裡面的演員還有精彩的動作場面 
       </li>
     </ul> 
-      <img class="img-responsive thick-red-border" width="120" height="120" style="display:none;" src="https://i.imgur.com/tmhI4be.jpg">
-        <button id="button">圖片</button>
+      
+      <button id="button">圖片</button>
+        <div id="picture" style="display:none;">
+          <img class="img-responsive thick-red-border" width="120" height="120" " src="https://i.imgur.com/tmhI4be.jpg">
+        </div>
   </body>
 </html>
