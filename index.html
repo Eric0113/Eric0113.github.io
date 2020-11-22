@@ -1,17 +1,17 @@
 <html>
-  <head></head>
+  <head>
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-   <style>
-     <script>
+    <script>
       $(document).ready function(){
         $("#conceal").click(function(){
-          $("#picture").addclass("animated  Fadeout");
+          $("#picture").conceal();
         });
         $(document).ready function(){
           $("#show").click(function(){
-            $("#picture").addclass("animated  Fadeout");
+            $("#picture").show();
         });
        </script>
+    <style>
      h1 {
        color: blue;
      }
@@ -24,6 +24,7 @@
       border-style:solid;
      }
     </style>
+  </head>
   <body style="background-position: Opx -325px;">
     <div class="container-fluid">
       <div class="row">
